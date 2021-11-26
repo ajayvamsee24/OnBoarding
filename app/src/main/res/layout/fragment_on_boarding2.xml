@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    android:id="@+id/scrollView2"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
     tools:context=".OnBoarding2">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -440,141 +440,121 @@
                 app:srcCompat="@drawable/ic_reset" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <Switch
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/speechSwitch"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:enabled="false"
             android:text="@string/speech_recognition"
             android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ado_setup"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+            app:layout_constraintTop_toBottomOf="@id/ado_setup" />
 
-        <Switch
+        <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/poseSwitch"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:enabled="false"
             android:text="@string/speech_recognition"
             android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/speechSwitch"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+            app:layout_constraintTop_toBottomOf="@id/speechSwitch" />
 
-        <Switch
+        <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/linearActuatorSwitch"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:enabled="true"
             android:text="@string/linear_actuator"
             android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/em_lock_layout"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+            app:layout_constraintTop_toBottomOf="@id/em_lock_layout" />
 
-        <Switch
+        <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/auto_led"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:enabled="true"
             android:text="@string/automatic_led"
             android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/linearActuatorSwitch"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+            app:layout_constraintTop_toBottomOf="@id/linearActuatorSwitch" />
 
-        <Switch
+        <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/spoofSwitch"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:checked="true"
             android:enabled="true"
             android:text="@string/spoof"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/auto_led"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+            app:layout_constraintTop_toBottomOf="@id/auto_led" />
 
-        <Switch
+        <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/logSwitch"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:enabled="true"
             android:text="@string/logging"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/spoofSwitch"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+            app:layout_constraintTop_toBottomOf="@id/spoofSwitch" />
 
-        <Switch
+        <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/pre_processing_switch"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:enabled="true"
             android:text="@string/preprocessing"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/logSwitch"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+            app:layout_constraintTop_toBottomOf="@id/logSwitch" />
 
-        <Switch
+        <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/kiosk_mode"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:enabled="true"
             android:text="@string/enable_kiosk_mode"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/pre_processing_switch"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+            app:layout_constraintTop_toBottomOf="@id/pre_processing_switch" />
 
-        <Switch
+        <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/crash"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:enabled="true"
             android:text="@string/crash_test"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/kiosk_mode"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+            app:layout_constraintTop_toBottomOf="@id/kiosk_mode" />
 
-        <Switch
+        <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/preReleaseSwitch"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:enabled="true"
             android:text="Pre-Release"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crash"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+            app:layout_constraintTop_toBottomOf="@id/crash" />
 
-        <Switch
+        <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/auto_door_close"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:enabled="true"
             android:text="Auto Door Close"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/preReleaseSwitch"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+            app:layout_constraintTop_toBottomOf="@id/preReleaseSwitch" />
 
         <TextView
             android:id="@+id/error_text"
