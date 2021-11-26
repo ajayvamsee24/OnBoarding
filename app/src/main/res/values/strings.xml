@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">OnBoarding</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="organization_name">Organization Name</string>
+    <string name="door_name">Door Name</string>
+    <string name="device_name">Device Name</string>
+    <string name="select_lock">Select Lock</string>
+    <string name="setup_ado">Setup ADO</string>
+    <string name="re_calibration">Re-calibration</string>
+    <string name="setup_deadbolt_lock">Setup Deadbolt Lock</string>
+    <string name="change_wifi">Change WIFI</string>
+    <string name="speech_recognition">Speech Recognition</string>
+    <string name="face_pose">Face Pose</string>
+    <string name="linear_actuator">Automatic Camera Adjustment</string>
+    <string name="automatic_led">Automatic LED</string>
+    <string name="health_check_interval_time_in_sec">Health Check Interval Time in Sec</string>
+    <string name="submit">Submit</string>
+    <string name="update">Update</string>
+    <string name="logging">Logging</string>
+    <string name="debug">Debug</string>
+    <string name="spoof">Spoof </string>
+    <string name="techolution_dev">Techolution DEV</string>
+    <string name="lab_door">Lab Door</string>
+    <string name="devicenam">faceopenea7ee8</string>
+    <string name="preprocessing">PreProcessing</string>
+    <string name="enable_kiosk_mode">Enable Kiosk Mode</string>
+    <string name="crash_test">Crash Test</string>
+    <string name="device_ip">192.168.1.18</string>
+</resources>
